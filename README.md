@@ -1,10 +1,10 @@
 # Self-Evolving Coding Agents
 
-## Introduction
+## 📖 Introduction
 
 As large language models become increasingly integrated into software engineering, coding agents are now capable of code generation, repository understanding, tool use, test execution, error analysis, and patch generation. Building on this progress, a growing body of research investigates how agents can continually improve by learning from execution outcomes, task trajectories, accumulated experience, and environmental feedback. This repository curates papers, systems, benchmarks, and research resources related to **Self-Evolving Coding Agents**. In addition to work that directly studies self-evolving coding agents, we include general self-evolution methods evaluated on coding or software engineering tasks, along with closely related benchmarks, environments, coding-agent foundations, and surveys. The collection will be continuously updated, and its taxonomy will evolve as the field develops.
 
-## Scope
+## 🎯 Scope
 
 This repository currently covers five categories of work:
 
@@ -18,7 +18,7 @@ This repository currently covers five categories of work:
 
 5. **Related Surveys**: Surveys and systematic literature reviews covering self-evolving agents, coding agents, and the intersection of these areas.
 
-## Contents
+## 📚 Contents
 
 - [Introduction](#introduction)
 - [Scope](#scope)
