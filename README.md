@@ -59,6 +59,7 @@ This repository currently covers five categories of work:
 6. [Huxley Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine](https://arxiv.org/abs/2510.21614) `[2026-ICLR]`
 7. [From 0-to-1 to 1-to-N: Reproducible Engineering Evidence for MetaAI Recursive Self-Design](https://arxiv.org/abs/2606.09663) `[2026-arXiv]`
 8. [From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws](https://arxiv.org/abs/2606.06324) `[2026-arXiv]`
+9. [Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311) `[2026-arXiv]`
 
 ### 1.2 Memory Self-Evolution
 
