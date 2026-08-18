@@ -2,32 +2,40 @@
 
 ## 📖 Introduction
 
-As large language models become increasingly integrated into software engineering, coding agents are now capable of code generation, repository understanding, tool use, test execution, error analysis, and patch generation. Building on this progress, a growing body of research investigates how agents can continually improve by learning from execution outcomes, task trajectories, accumulated experience, and environmental feedback. This repository curates papers, systems, benchmarks, and research resources related to **Self-Evolving Coding Agents**. In addition to work that directly studies self-evolving coding agents, we include general self-evolution methods evaluated on coding or software engineering tasks, along with closely related benchmarks, environments, coding-agent foundations, and surveys. The collection will be continuously updated, and its taxonomy will evolve as the field develops.
+<p align="center">
+  <img src="assets/self-evolving-code-agent.png" alt="Overview of self-evolving coding agents" width="100%">
+</p>
+<p align="center"><em>Overview of self-evolving coding agents.</em></p>
+
+Coding agents increasingly improve persistent components of their own software-engineering loop by learning from execution outcomes, trajectories, accumulated experience, and environmental feedback. This repository accompanies our survey and curates its paper corpus, related methods, benchmarks, products, and background resources. The six target categories and their terminology follow the paper taxonomy.
 
 ## 🎯 Scope
 
-This repository currently covers five categories of work:
+This repository covers six groups of resources:
 
-1. **Core Self-Evolving Coding Agents**: Agents whose primary domain is coding or software engineering and that autonomously improve their architecture, memory, skills, tools, models, or collaboration structures during training, deployment, or interaction.
+1. **Core Self-Evolving Coding Agents**: curated systems organized by evolving target: agent framework, memory, skill/tool, model, workflow/topology, and environment/context.
 
 2. **General Self-Evolution Methods in Coding Settings**: General agent self-evolution methods whose improvements are evaluated on code generation, program execution, or software engineering tasks.
 
 3. **Benchmarks and Environments**: Code-generation benchmarks, real-world software engineering tasks, data resources, and executable environments used to build, train, and evaluate coding agents.
 
-4. **Background**: Foundational work on code generation, repository-level software engineering, and multi-agent coding that informs the development of self-evolving coding agents.
+4. **Products**: deployed coding products with persistent adaptation mechanisms, mapped to the same target vocabulary.
 
-5. **Related Surveys**: Surveys and systematic literature reviews covering self-evolving agents, coding agents, and the intersection of these areas.
+5. **Background**: foundational work on code generation, repository-level software engineering, and multi-agent coding.
+
+6. **Related Surveys**: surveys covering self-evolving agents, coding agents, and their intersection.
 
 ## 📚 Contents
 
 - [Introduction](#introduction)
 - [Scope](#scope)
 - [1. Core Self-Evolving Coding Agents](#1-core-self-evolving-coding-agents)
-  - [1.1 Agent Architecture Self-Evolution](#11-agent-architecture-self-evolution)
+  - [1.1 Agent Framework Self-Evolution](#11-agent-framework-self-evolution)
   - [1.2 Memory Self-Evolution](#12-memory-self-evolution)
   - [1.3 Skill and Tool Self-Evolution](#13-skill-and-tool-self-evolution)
   - [1.4 Model Self-Evolution](#14-model-self-evolution)
   - [1.5 Workflow and Topology Self-Evolution](#15-workflow-and-topology-self-evolution)
+  - [1.6 Environment and Context Self-Evolution](#16-environment-and-context-self-evolution)
 - [2. General Self-Evolution Methods in Coding Settings](#2-general-self-evolution-methods-in-coding-settings)
   - [2.1 Feedback Optimization](#21-feedback-optimization)
   - [2.2 Experience-Based Learning](#22-experience-based-learning)
@@ -39,62 +47,89 @@ This repository currently covers five categories of work:
   - [3.1 Repository-Level Software Engineering Benchmarks](#31-repository-level-software-engineering-benchmarks)
   - [3.2 General Coding Benchmarks](#32-general-coding-benchmarks)
   - [3.3 Training and Evaluation Infrastructure](#33-training-and-evaluation-infrastructure)
-- [4. Background](#4-background)
-  - [4.1 General Coding Agents](#41-general-coding-agents)
-  - [4.2 Repository-Level Software Engineering Agents](#42-repository-level-software-engineering-agents)
-  - [4.3 Multi-Agent Coding](#43-multi-agent-coding)
-- [5. Related Surveys](#5-related-surveys)
-  - [5.1 Surveys on Self-Evolving Agents](#51-surveys-on-self-evolving-agents)
-  - [5.2 Surveys on Coding Agents](#52-surveys-on-coding-agents)
+- [4. Self-Evolving Coding Products](#4-self-evolving-coding-products)
+- [5. Background](#5-background)
+  - [5.1 General Coding Agents](#51-general-coding-agents)
+  - [5.2 Repository-Level Software Engineering Agents](#52-repository-level-software-engineering-agents)
+  - [5.3 Multi-Agent Coding](#53-multi-agent-coding)
+- [6. Related Surveys](#6-related-surveys)
+  - [6.1 Surveys on Self-Evolving Agents](#61-surveys-on-self-evolving-agents)
+  - [6.2 Surveys on Coding Agents](#62-surveys-on-coding-agents)
 
 ## 1. Core Self-Evolving Coding Agents
 
-### 1.1 Agent Architecture Self-Evolution
+### 1.1 Agent Framework Self-Evolution
 
-1. [A Self-Improving Coding Agent (SICA)](https://arxiv.org/abs/2504.15228) `[2025-ICLR Workshop]`
-2. [Self-Improvement via Fast Tree-Search (SIFT)](https://openreview.net/forum?id=wZMNXHPYcO) `[2026-ICLR]`
-3. [Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation](https://arxiv.org/abs/2310.02304) `[2024-COLM]`
-4. [Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents](https://arxiv.org/abs/2505.22954) `[2026-ICLR]`
-5. [Mendel Gödel Machine: Comparative Evolution Enables State-of-the-Art Self-Improving Coding Agents](https://openreview.net/forum?id=EJ7gBBDvCg) `[2026-OpenReview]`
-6. [Huxley Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine](https://arxiv.org/abs/2510.21614) `[2026-ICLR]`
-7. [From 0-to-1 to 1-to-N: Reproducible Engineering Evidence for MetaAI Recursive Self-Design](https://arxiv.org/abs/2606.09663) `[2026-arXiv]`
-8. [From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws](https://arxiv.org/abs/2606.06324) `[2026-arXiv]`
-9. [Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311) `[2026-arXiv]`
+1. [Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents (DGM)](https://arxiv.org/abs/2505.22954) `[2026-ICLR]`
+2. [Mendel Gödel Machine: Comparative Evolution Enables State-of-the-Art Self-Improving Coding Agents (Mendel GM)](https://openreview.net/forum?id=EJ7gBBDvCg) `[2026-OpenReview]`
+3. [Huxley Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine (Huxley GM)](https://arxiv.org/abs/2510.21614) `[2026-ICLR]`
+4. [A Self-Improving Coding Agent (SICA)](https://arxiv.org/abs/2504.15228) `[2025-ICLR]`
+5. [Self-Improvement via Fast Tree-Search (SIFT)](https://openreview.net/forum?id=wZMNXHPYcO) `[2026-ICLR]`
+6. [Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation](https://arxiv.org/abs/2310.02304) `[2024-COLM]`
+7. [Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses (AHE)](https://arxiv.org/abs/2604.25850) `[2026-arXiv]`
+8. [From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws (HarnessFix)](https://arxiv.org/abs/2606.06324) `[2026-arXiv]`
+9. [TTHE: Test-Time Harness Evolution](https://arxiv.org/abs/2607.08124) `[2026-arXiv]`
+10. [HarnessCompass: Guiding Automatic Harness Evolution toward Generalizable and Effective Agent Harnesses](https://arxiv.org/abs/2608.01918) `[2026-arXiv]`
+11. [Evo-Harness: Context-to-Harness Skill Compilation for Self-Evolving Agents](https://arxiv.org/abs/2608.15071) `[2026-arXiv]`
+12. [EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement](https://arxiv.org/abs/2608.04968) `[2026-arXiv]`
+13. [Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases (CCA)](https://arxiv.org/abs/2512.10398) `[2025-arXiv]`
+14. [Argus: A General-Purpose Agentic Reasoning Runtime for Long-Horizon Tasks](https://arxiv.org/abs/2608.05144) `[2026-arXiv]`
+15. [Self-Evolving Agents with Anytime-Valid Certificates (SEA)](https://arxiv.org/abs/2607.00871) `[2026-arXiv]`
+16. [One Recipe, Many Harnesses: What Self-Evolution Encodes Across Languages and Models](https://arxiv.org/abs/2608.10178) `[2026-arXiv]`
+17. [Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227) `[2026-arXiv]`
+18. [HELIX: Model-Harness Co-evolution for Recursive Self-Improvement](https://arxiv.org/abs/2608.13951) `[2026-arXiv]`
+19. [Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311) `[2026-arXiv]`
 
 ### 1.2 Memory Self-Evolution
 
-1. [SWE-Exp: Experience-Driven Software Issue Resolution](https://arxiv.org/abs/2507.23361) `[2025-arXiv]`
-2. [LLMs as Continuous Learners: Improving the Reproduction of Defective Code in Software Issues (EvoCoder)](https://arxiv.org/abs/2411.13941) `[2024-arXiv]`
-3. [Structurally Aligned Subtask-Level Memory for Software Engineering Agents](https://arxiv.org/abs/2602.21611) `[2026-arXiv]`
-4. [EvoRepair: Enhancing Vulnerability Repair Agents Through Experience-Based Self-Evolution](https://arxiv.org/abs/2605.30105) `[2026-arXiv]`
-5. [Improving Code Localization with Repository Memory](https://arxiv.org/abs/2510.01003) `[2026-ICLR]`
-6. [Self-Abstraction from Grounded Experience for Plan-Guided Policy Refinement (SAGE)](https://arxiv.org/abs/2511.05931) `[2025-arXiv]`
+1. [Self-Abstraction from Grounded Experience for Plan-Guided Policy Refinement (SAGE)](https://arxiv.org/abs/2511.05931) `[2025-arXiv]`
+2. [Improving Code Localization with Repository Memory](https://arxiv.org/abs/2510.01003) `[2026-ICLR]`
+3. [SWE-Exp: Experience-Driven Software Issue Resolution](https://arxiv.org/abs/2507.23361) `[2025-arXiv]`
+4. [LLMs as Continuous Learners: Improving the Reproduction of Defective Code in Software Issues (EvoCoder)](https://arxiv.org/abs/2411.13941) `[2024-arXiv]`
+5. [Structurally Aligned Subtask-Level Memory for Software Engineering Agents (Subtask Memory)](https://arxiv.org/abs/2602.21611) `[2026-arXiv]`
+6. [EvoRepair: Enhancing Vulnerability Repair Agents Through Experience-Based Self-Evolution](https://arxiv.org/abs/2605.30105) `[2026-arXiv]`
+7. [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](https://arxiv.org/abs/2606.28434) `[2026-arXiv]`
+8. [Your Code Agent Can Grow Alongside You with Structured Memory (MemCoder)](https://arxiv.org/abs/2603.13258) `[2026-arXiv]`
+9. [Coupling Planning with Episodic Memory in LLM Agents for Software Issue Resolution (PMCoder)](https://arxiv.org/abs/2608.06811) `[2026-arXiv]`
+10. [EXPEREPAIR: Dual-Memory Enhanced LLM-based Repository-Level Program Repair](https://arxiv.org/abs/2506.10484) `[2026-FSE]`
 
 ### 1.3 Skill and Tool Self-Evolution
 
-1. [CODESKILL: Learning Self-Evolving Skills for Coding Agents](https://arxiv.org/abs/2605.25430) `[2026-arXiv]`
-2. [Automatically Learning Skills for Coding Agents (GSkill)](https://doi.org/10.1145/3786335.3813196) `[2026-ACM AI and Agentic Systems]`
-3. [Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills](https://arxiv.org/abs/2606.07412) `[2026-arXiv]`
-4. [EffiSkill: Agent Skill Based Automated Code Efficiency Optimization](https://arxiv.org/abs/2603.27850) `[2026-arXiv]`
-5. [Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?](https://arxiv.org/abs/2511.13646) `[2025-arXiv]`
+1. [Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?](https://arxiv.org/abs/2511.13646) `[2025-arXiv]`
+2. [CODESKILL: Learning Self-Evolving Skills for Coding Agents](https://arxiv.org/abs/2605.25430) `[2026-arXiv]`
+3. [Automatically Learning Skills for Coding Agents (GSkill)](https://doi.org/10.1145/3786335.3813196) `[2026-ACM CAIS]`
+4. [Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills](https://arxiv.org/abs/2606.07412) `[2026-arXiv]`
+5. [EffiSkill: Agent Skill Based Automated Code Efficiency Optimization](https://arxiv.org/abs/2603.27850) `[2026-arXiv]`
+6. [Learning Globally Reusable Skills for Coding Agents (GSE)](https://arxiv.org/abs/2608.06153) `[2026-arXiv]`
+7. [Ratchet: How Reliable Must an LLM Judge Be to Retire a Skill?](https://arxiv.org/abs/2605.22148) `[2026-arXiv]`
+8. [Self-Improving AI Coding Agents Through Accumulated Behavioral Rules: A Closed-Loop Framework](https://arxiv.org/abs/2607.13091) `[2026-IEEE ICE]`
+9. [Do Personalized Skills Help Coding Agents? An Empirical Study of Developer Interaction Histories](https://arxiv.org/abs/2608.10319) `[2026-arXiv]`
 
 ### 1.4 Model Self-Evolution
 
 1. [Toward Training Superintelligent Software Agents through Self-Play SWE-RL](https://arxiv.org/abs/2512.18552) `[2026-ICML]`
 2. [Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards](https://arxiv.org/abs/2506.11425) `[2026-ICLR]`
-3. [ReVeal: Self-Evolving Code Agents via Reliable Self-Verification](https://arxiv.org/abs/2506.11442) `[2026-ICLR]`
+3. [ReVeal: Self-Evolving Code Agents via Iterative Generation-Verification](https://arxiv.org/abs/2506.11442) `[2026-ICLR]`
 4. [CURE: Co-Evolving LLM Coder and Unit Tester via Reinforcement Learning](https://arxiv.org/abs/2506.03136) `[2025-NeurIPS]`
 5. [ZeroCoder: Can LLMs Improve Code Generation Without Ground-Truth Supervision?](https://arxiv.org/abs/2604.07864) `[2026-arXiv]`
-6. [Learning to Solve and Verify: A Self-Play Framework for Code and Test Generation (Sol-Ver)](https://arxiv.org/abs/2502.14948) `[2025-NeurIPS Workshop]`
+6. [Learning to Solve and Verify: A Self-Play Framework for Code and Test Generation (Sol-Ver)](https://arxiv.org/abs/2502.14948) `[2025-NeurIPS]`
 7. [ACE: Self-Evolving LLM Coding Framework via Adversarial Unit Test Generation and Preference Optimization](https://arxiv.org/abs/2605.16299) `[2026-arXiv]`
-8. [Controlled Self-Evolution for Algorithmic Code Optimization](https://arxiv.org/abs/2601.07348) `[2026-arXiv]`
 
 ### 1.5 Workflow and Topology Self-Evolution
 
-1. [SEW: Self-Evolving Agentic Workflows for Automated Code Generation](https://arxiv.org/abs/2505.18646) `[2025-arXiv]`
-2. [SEMAG: Self-Evolutionary Multi-Agent Code Generation](https://arxiv.org/abs/2603.15707) `[2026-arXiv]`
-3. [Self-Evolving Multi-Agent Collaboration Networks for Software Development (EvoMAC)](https://arxiv.org/abs/2410.16946) `[2025-ICLR]`
-4. [AgentConductor: Topology Evolution for Multi-Agent Competition-Level Code Generation](https://arxiv.org/abs/2602.17100) `[2026-arXiv]`
+1. [SEMAG: Self-Evolutionary Multi-Agent Code Generation](https://arxiv.org/abs/2603.15707) `[2026-arXiv]`
+2. [Self-Evolving Multi-Agent Collaboration Networks for Software Development (EvoMAC)](https://arxiv.org/abs/2410.16946) `[2025-ICLR]`
+3. [AgentConductor: Topology Evolution for Multi-Agent Competition-Level Code Generation](https://arxiv.org/abs/2602.17100) `[2026-ICML]`
+4. [SEW: Self-Evolving Agentic Workflows for Automated Code Generation](https://arxiv.org/abs/2505.18646) `[2025-arXiv]`
+5. [AFlow: Automating Agentic Workflow Generation](https://arxiv.org/abs/2410.10762) `[2025-ICLR]`
+6. [EvoAgentX: An Automated Framework for Evolving Agentic Workflows](https://arxiv.org/abs/2507.03616) `[2025-EMNLP Demos]`
+
+### 1.6 Environment and Context Self-Evolution
+
+1. [A Self-Evolving Framework for Efficient Terminal Agents via Observational Context Compression (TACO)](https://arxiv.org/abs/2604.19572) `[2026-arXiv]`
+2. [SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents](https://arxiv.org/abs/2601.16746) `[2026-arXiv]`
+3. [Libra: Training the Environment for Agentic Information Retrieval](https://arxiv.org/abs/2607.00016) `[2026-arXiv]`
+4. [EvoConfig: Self-Evolving Multi-Agent Systems for Efficient Autonomous Environment Configuration](https://arxiv.org/abs/2601.16489) `[2026-arXiv]`
 
 ## 2. General Self-Evolution Methods in Coding Settings
 
@@ -120,10 +155,9 @@ This repository currently covers five categories of work:
 
 ### 2.3 Skill Learning
 
-1. [Ratchet: A Minimal Hygiene Recipe for Self-Evolving LLM Agents](https://arxiv.org/abs/2605.22148) `[2026-arXiv]`
-2. [Who Grades the Grader? Co-Evolving Evaluation Metrics and Skills for Self-Improving LLM Agents](https://arxiv.org/abs/2607.12790) `[2026-arXiv]`
-3. [FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills](https://arxiv.org/abs/2607.21596) `[2026-arXiv]`
-4. [From Procedural Skills to Strategy Genes: Towards Experience-Driven Test-Time Evolution](https://arxiv.org/abs/2604.15097) `[2026-arXiv]`
+1. [Who Grades the Grader? Co-Evolving Evaluation Metrics and Skills for Self-Improving LLM Agents](https://arxiv.org/abs/2607.12790) `[2026-arXiv]`
+2. [FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills](https://arxiv.org/abs/2607.21596) `[2026-arXiv]`
+3. [From Procedural Skills to Strategy Genes: Towards Experience-Driven Test-Time Evolution](https://arxiv.org/abs/2604.15097) `[2026-arXiv]`
 
 ### 2.4 Self-Generated Training
 
@@ -137,20 +171,17 @@ This repository currently covers five categories of work:
 1. [Language Agents as Optimizable Graphs](https://arxiv.org/abs/2402.16823) `[2024-ICML]`
 2. [Symbolic Learning Enables Self-Evolving Agents](https://doi.org/10.1016/j.aiopen.2025.11.004) `[2025-AI Open]`
 3. [Automated Design of Agentic Systems](https://arxiv.org/abs/2408.08435) `[2025-ICLR]`
-4. [AFlow: Automating Agentic Workflow Generation](https://proceedings.iclr.cc/paper_files/paper/2025/hash/5492ecbce4439401798dcd2c90be94cd-Abstract-Conference.html) `[2025-ICLR]`
-5. [MaAS: Multi-agent Architecture Search via Agentic Supernet](https://proceedings.mlr.press/v267/zhang25bi.html) `[2025-ICML]`
-6. [EvoAgentX: An Automated Framework for Evolving Agentic Workflows](https://aclanthology.org/2025.emnlp-demos.47/) `[2025-EMNLP Demos]`
-7. [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457) `[2026-ICLR]`
-8. [A²Flow: Automating Agentic Workflow Generation via Self-Adaptive Abstraction Operators](https://ojs.aaai.org/index.php/AAAI/article/view/40240) `[2026-AAAI]`
-9. [JudgeFlow: Agentic Workflow Optimization via Block Judge](https://arxiv.org/abs/2601.07477) `[2026-arXiv]`
-10. [AgentEvo: Cost-Aware Agentic Workflow Generation via Adaptive Multi-Stage Evolution](https://doi.org/10.1007/s40747-026-02325-0) `[2026-Complex & Intelligent Systems]`
-11. [Autogenesis: A Self-Evolving Agent Protocol](https://arxiv.org/abs/2604.15034) `[2026-arXiv]`
-12. [FlowBot: Inducing LLM Workflows with Bilevel Optimization and Textual Gradients](https://arxiv.org/abs/2604.26258) `[2026-ICML]`
-13. [EEVEE: Towards Test-time Prompt Learning in the Real World for Self-Improving Agents](https://arxiv.org/abs/2606.11182) `[2026-arXiv]`
-14. [Automatically Evolving Prompt Guidelines for Task-Specific Optimization](https://arxiv.org/abs/2607.14105) `[2026-arXiv]`
-15. [Self-Evolving Agents with Anytime-Valid Certificates](https://arxiv.org/abs/2607.00871) `[2026-arXiv]`
-16. [Harnessing Agentic Evolution](https://arxiv.org/abs/2605.13821) `[2026-arXiv]`
-17. [Hyperagents](https://arxiv.org/abs/2603.19461) `[2026-arXiv]`
+4. [MaAS: Multi-agent Architecture Search via Agentic Supernet](https://proceedings.mlr.press/v267/zhang25bi.html) `[2025-ICML]`
+5. [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457) `[2026-ICLR]`
+6. [A²Flow: Automating Agentic Workflow Generation via Self-Adaptive Abstraction Operators](https://ojs.aaai.org/index.php/AAAI/article/view/40240) `[2026-AAAI]`
+7. [JudgeFlow: Agentic Workflow Optimization via Block Judge](https://arxiv.org/abs/2601.07477) `[2026-arXiv]`
+8. [AgentEvo: Cost-Aware Agentic Workflow Generation via Adaptive Multi-Stage Evolution](https://doi.org/10.1007/s40747-026-02325-0) `[2026-Complex & Intelligent Systems]`
+9. [Autogenesis: A Self-Evolving Agent Protocol](https://arxiv.org/abs/2604.15034) `[2026-arXiv]`
+10. [FlowBot: Inducing LLM Workflows with Bilevel Optimization and Textual Gradients](https://arxiv.org/abs/2604.26258) `[2026-ICML]`
+11. [EEVEE: Towards Test-time Prompt Learning in the Real World for Self-Improving Agents](https://arxiv.org/abs/2606.11182) `[2026-arXiv]`
+12. [Automatically Evolving Prompt Guidelines for Task-Specific Optimization](https://arxiv.org/abs/2607.14105) `[2026-arXiv]`
+13. [Harnessing Agentic Evolution](https://arxiv.org/abs/2605.13821) `[2026-arXiv]`
+14. [Hyperagents](https://arxiv.org/abs/2603.19461) `[2026-arXiv]`
 
 ### 2.6 Collective Evolution
 
@@ -197,9 +228,25 @@ This repository currently covers five categories of work:
 6. [SWE-RM: Execution-free Feedback For Software Engineering Agents](https://arxiv.org/abs/2512.21919) `[2026-ICLR]`
 7. [SWE-rebench: An Automated Pipeline for Task Collection and Decontaminated Evaluation of Software Engineering Agents](https://arxiv.org/abs/2505.20411) `[2025-NeurIPS Datasets and Benchmarks]`
 
-## 4. Background
+## 4. Self-Evolving Coding Products
 
-### 4.1 General Coding Agents
+The following products persist memories, skills, agent configurations, or environment settings across tasks. They are mapped to the same **Target** vocabulary as the paper taxonomy; inclusion describes a documented product mechanism and does not by itself imply a fully autonomous, experimentally validated self-evolution loop.
+
+- **[Prime Agent (PA)](https://www.primeintellect.ai/blog/prime-agent)** — **Year:** 2026 · **Company:** Prime Intellect · **Target:** Agent framework, memory, skill and tool · [Code](https://github.com/PrimeIntellect-ai/prime-agent)
+- **[Gemini CLI Auto Memory (GCAM)](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/auto-memory.md)** — **Year:** 2026 · **Company:** Google · **Target:** Memory, skill and tool · [Changelog](https://github.com/google-gemini/gemini-cli/blob/main/docs/changelogs/index.md)
+- **[GitHub Copilot Memory (GCM)](https://docs.github.com/en/copilot/concepts/agents/copilot-memory)** — **Year:** 2026 · **Company:** GitHub · **Target:** Memory · [Announcement](https://github.blog/changelog/2026-03-04-copilot-memory-now-on-by-default-for-pro-and-pro-users-in-public-preview/)
+- **[Augment Agent / Cosmos Learning Flywheel (AA/CLF)](https://www.augmentcode.com/guides/agent-learning-flywheel)** — **Year:** 2025–2026 · **Company:** Augment Code · **Target:** Agent framework, memory, skill and tool · [Memory review](https://www.augmentcode.com/blog/how-we-built-memory-review)
+- **[Claude Code Auto Memory (CCAM)](https://code.claude.com/docs/en/memory)** — **Year:** 2026 · **Company:** Anthropic · **Target:** Memory · [Changelog](https://code.claude.com/docs/en/changelog)
+- **[Cursor Memories / Automations (CMA)](https://cursor.com/changelog/03-05-26)** — **Year:** 2025–2026 · **Company:** Cursor · **Target:** Agent framework, memory · [Memories](https://cursor.com/changelog/1-2)
+- **[Devin Session Insights / Knowledge / Playbooks (Devin SIKP)](https://docs.devin.ai/product-guides/session-insights)** — **Year:** 2025–2026 · **Company:** Cognition · **Target:** Memory, skill and tool · [Advanced capabilities](https://docs.devin.ai/work-with-devin/advanced-capabilities)
+- **[Windsurf Cascade Memories (WCM)](https://docs.windsurf.com/windsurf/cascade/memories)** — **Year:** 2025–2026 · **Company:** Windsurf / Cognition · **Target:** Memory
+- **[OpenBlock Agent (OB-1)](https://www.openblocklabs.com/)** — **Year:** 2026 · **Company:** OpenBlock Labs · **Target:** Agent framework, skill and tool, environment and context · [Waitlist](https://waitlist.openblocklabs.com/)
+
+Across these systems, memory is the most common entry point because it can improve continuity without changing model weights. A smaller group turns repeated experience into reusable skills or modifies the surrounding agent framework. OB-1 extends the target to environment and context, showing how productized evolution can reach beyond the agent's internal state.
+
+## 5. Background
+
+### 5.1 General Coding Agents
 
 1. [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html) `[2024-NeurIPS]`
 2. [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://proceedings.iclr.cc/paper_files/paper/2025/hash/a4b6ad6b48850c0c331d1259fc66a69c-Abstract-Conference.html) `[2025-ICLR]`
@@ -215,7 +262,7 @@ This repository currently covers five categories of work:
 12. [CodeEvolve: An Open-Source Evolutionary Coding Agent for Algorithmic Discovery and Optimization](https://arxiv.org/abs/2510.14150) `[2025-arXiv]`
 13. [Reward Hacking in Self-Improving Code Agents](https://openreview.net/forum?id=JCjGvbsOmQ) `[2026-OpenReview]`
 
-### 4.2 Repository-Level Software Engineering Agents
+### 5.2 Repository-Level Software Engineering Agents
 
 1. [CodePlan: Repository-Level Coding using LLMs and Planning](https://doi.org/10.1145/3643757) `[2024-FSE]`
 2. [AutoCodeRover: Autonomous Program Improvement](https://2024.issta.org/details/issta-2024-papers/127/AutoCodeRover-Autonomous-Program-Improvement) `[2024-ISSTA]`
@@ -232,16 +279,16 @@ This repository currently covers five categories of work:
 13. [Understanding Code Agent Behaviour: An Empirical Study of Success and Failure Trajectories](https://arxiv.org/abs/2511.00197) `[2025-arXiv]`
 14. [Your Agent May Misevolve: Emergent Risks in Self-Evolving LLM Agents](https://openreview.net/forum?id=lS1gWUHbfx) `[2026-ICLR]`
 
-### 4.3 Multi-Agent Coding
+### 5.3 Multi-Agent Coding
 
 1. [ChatDev: Communicative Agents for Software Development](https://aclanthology.org/2024.acl-long.810/) `[2024-ACL]`
 2. [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://proceedings.iclr.cc/paper_files/paper/2024/hash/6507b115562bb0a305f1958ccc87355a-Abstract-Conference.html) `[2024-ICLR]`
 3. [MapCoder: Multi-Agent Code Generation for Competitive Problem Solving](https://aclanthology.org/2024.acl-long.269/) `[2024-ACL]`
 4. [MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution](https://papers.nips.cc/paper_files/paper/2024/hash/5d1f02132ef51602adf07000ca5b6138-Abstract-Conference.html) `[2024-NeurIPS]`
 
-## 5. Related Surveys
+## 6. Related Surveys
 
-### 5.1 Surveys on Self-Evolving Agents
+### 6.1 Surveys on Self-Evolving Agents
 
 1. [A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence](https://openreview.net/forum?id=CTr3bovS5F) `[2026-TMLR]`
 2. [A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm Bridging Foundation Models and Lifelong Agentic Systems](https://arxiv.org/abs/2508.07407) `[2025-arXiv]`
@@ -251,7 +298,7 @@ This repository currently covers five categories of work:
 6. [A Survey on Self-Evolution of Large Language Models](https://arxiv.org/abs/2404.14387) `[2024-arXiv]`
 7. [Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering](https://arxiv.org/abs/2604.08224) `[2026-arXiv]`
 
-### 5.2 Surveys on Coding Agents
+### 6.2 Surveys on Coding Agents
 
 1. [Large Language Model-Based Agents for Software Engineering: A Survey](https://arxiv.org/abs/2409.02977) `[2025-TOSEM]`
 2. [Agents in Software Engineering: Survey, Landscape, and Vision](https://doi.org/10.1007/s10515-025-00544-2) `[2025-Automated Software Engineering]`
@@ -259,3 +306,14 @@ This repository currently covers five categories of work:
 4. [Large Language Models for Software Engineering: A Systematic Literature Review](https://doi.org/10.1145/3695988) `[2024-TOSEM]`
 5. [A Survey on Large Language Models for Code Generation](https://doi.org/10.1145/3747588) `[2026-TOSEM]`
 6. [Advances and Frontiers of LLM-Based Issue Resolution in Software Engineering: A Comprehensive Survey](https://arxiv.org/abs/2601.11655) `[2026-arXiv]`
+
+## Citation
+
+```bibtex
+@article{zhou2026self,
+  title={Self-Evolving Coding Agents},
+  author={Zhou, Hao and Hu, Haichuan and Shang, Ye and Zhang, Quanjun},
+  journal={arXiv preprint arXiv:2608.03392},
+  year={2026}
+}
+```
