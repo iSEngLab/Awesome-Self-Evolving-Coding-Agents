@@ -79,6 +79,14 @@ This repository covers six groups of resources:
 17. [Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227) `[2026-arXiv]`
 18. [HELIX: Model-Harness Co-evolution for Recursive Self-Improvement](https://arxiv.org/abs/2608.13951) `[2026-arXiv]`
 19. [Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311) `[2026-arXiv]`
+20. [Group-Evolving Agents: Open-Ended Self-Improvement via Experience Sharing (GEA)](https://arxiv.org/abs/2602.04837) `[2026-arXiv]`
+21. [HarnessBank: Semantic Gene-Bank Search with Gated Verification for Agent-Harness Self-Evolution](https://arxiv.org/abs/2607.13683) `[2026-arXiv]`
+22. [DarwinX: Evolving Agent Harnesses Through Natural Selection](https://arxiv.org/abs/2608.07545) `[2026-arXiv]`
+23. [Adapting the Interface, Not the Model: Runtime Harness Adaptation for Deterministic LLM Agents (Life-Harness)](https://arxiv.org/abs/2605.22166) `[2026-arXiv]`
+24. [Self-Harness: Harnesses That Improve Themselves](https://arxiv.org/abs/2606.09498) `[2026-arXiv]`
+25. [Meta-Harness: End-to-End Optimization of Model Harnesses](https://arxiv.org/abs/2603.28052) `[2026-arXiv]`
+26. [Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents](https://arxiv.org/abs/2605.30621) `[2026-arXiv]`
+27. [HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry](https://arxiv.org/abs/2606.14249) `[2026-arXiv]`
 
 ### 1.2 Memory Self-Evolution
 
@@ -104,6 +112,7 @@ This repository covers six groups of resources:
 7. [Ratchet: How Reliable Must an LLM Judge Be to Retire a Skill?](https://arxiv.org/abs/2605.22148) `[2026-arXiv]`
 8. [Self-Improving AI Coding Agents Through Accumulated Behavioral Rules: A Closed-Loop Framework](https://arxiv.org/abs/2607.13091) `[2026-IEEE ICE]`
 9. [Do Personalized Skills Help Coding Agents? An Empirical Study of Developer Interaction Histories](https://arxiv.org/abs/2608.10319) `[2026-arXiv]`
+10. [SIGA: Self-Evolving Coding-Agent Adapters for Scientific Simulation](https://arxiv.org/abs/2606.09774) `[2026-arXiv]`
 
 ### 1.4 Model Self-Evolution
 
@@ -114,6 +123,7 @@ This repository covers six groups of resources:
 5. [ZeroCoder: Can LLMs Improve Code Generation Without Ground-Truth Supervision?](https://arxiv.org/abs/2604.07864) `[2026-arXiv]`
 6. [Learning to Solve and Verify: A Self-Play Framework for Code and Test Generation (Sol-Ver)](https://arxiv.org/abs/2502.14948) `[2025-NeurIPS]`
 7. [ACE: Self-Evolving LLM Coding Framework via Adversarial Unit Test Generation and Preference Optimization](https://arxiv.org/abs/2605.16299) `[2026-arXiv]`
+8. [Harness-R1: Learning to Edit Executable Runtime Harnesses from Agent Failure Trajectories](https://arxiv.org/abs/2608.02276) `[2026-arXiv]`
 
 ### 1.5 Workflow and Topology Self-Evolution
 
@@ -187,10 +197,9 @@ This repository covers six groups of resources:
 
 1. [Multi-Agent Evolve: LLM Self-Improve through Co-Evolution](https://arxiv.org/abs/2510.23595) `[2025-arXiv]`
 2. [Self-Evolving Multi-Agent Systems via Textual Backpropagation](https://aclanthology.org/2026.findings-acl.483/) `[2026-ACL Findings]`
-3. [Group-Evolving Agents: Open-Ended Self-Improvement via Experience Sharing](https://arxiv.org/abs/2602.04837) `[2026-arXiv]`
-4. [LangMARL: Natural Language Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2604.00722) `[2026-arXiv]`
-5. [CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery](https://arxiv.org/abs/2604.01658) `[2026-arXiv]`
-6. [Evolve as a Team: Collaborative Self-Evolution for LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2605.29790) `[2026-arXiv]`
+3. [LangMARL: Natural Language Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2604.00722) `[2026-arXiv]`
+4. [CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery](https://arxiv.org/abs/2604.01658) `[2026-arXiv]`
+5. [Evolve as a Team: Collaborative Self-Evolution for LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2605.29790) `[2026-arXiv]`
 
 ## 3. Benchmarks and Environments
 
