@@ -1,5 +1,9 @@
 # Self-Evolving Coding Agents
 
+<p align="center">
+  <img src="assets/evolutionary-landscape.png" alt="Evolutionary landscape of code agents and self-evolving agents" width="100%">
+</p>
+
 ## 📖 Introduction
 
 <p align="center">
@@ -326,3 +330,5 @@ Across these systems, memory is the most common entry point because it can impro
   year={2026}
 }
 ```
+
+🤝 Contributions are welcome! If you find any missing or incorrect information, please feel free to open an issue or submit a pull request.
