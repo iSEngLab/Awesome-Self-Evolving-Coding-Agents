@@ -323,11 +323,14 @@ Across these systems, memory is the most common entry point because it can impro
 ## Citation
 
 ```bibtex
-@article{zhou2026self,
-  title={Self-Evolving Coding Agents},
-  author={Zhou, Hao and Hu, Haichuan and Shang, Ye and Zhang, Quanjun},
-  journal={arXiv preprint arXiv:2608.03392},
-  year={2026}
+@misc{zhou2026selfevolvingcodingagents,
+      title={Self-Evolving Coding Agents}, 
+      author={Hao Zhou and Haichuan Hu and Ye Shang and Quanjun Zhang},
+      year={2026},
+      eprint={2608.03392},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2608.03392}, 
 }
 ```
 
