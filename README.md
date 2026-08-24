@@ -1,4 +1,23 @@
-# Self-Evolving Coding Agents
+<div align="center">
+
+<h1>Self-Evolving Coding Agents</h1>
+
+<p>
+  <a href="https://github.com/sindresorhus/awesome">
+    <img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
+  </a>
+  <a href="https://arxiv.org/abs/2608.03392">
+    <img src="https://img.shields.io/badge/Paper-arXiv%3A2608.03392-b31b1b.svg?logo=arxiv&logoColor=white" alt="Paper on arXiv">
+  </a>
+  <a href="https://github.com/zhouhao1024/Awesome-Self-Evolving-Coding-Agents/issues">
+    <img src="https://img.shields.io/badge/Contributions-welcome-brightgreen.svg" alt="Contributions welcome">
+  </a>
+  <a href="https://github.com/zhouhao1024/Awesome-Self-Evolving-Coding-Agents/stargazers">
+    <img src="https://img.shields.io/github/stars/zhouhao1024/Awesome-Self-Evolving-Coding-Agents?style=flat&logo=github&label=Stars" alt="GitHub stars">
+  </a>
+</p>
+
+</div>
 
 <p align="center">
   <img src="assets/evolutionary-landscape.png" alt="Evolutionary landscape of code agents and self-evolving agents" width="100%">
@@ -335,3 +354,7 @@ Across these systems, memory is the most common entry point because it can impro
 ```
 
 🤝 Contributions are welcome! If you find any missing or incorrect information, please feel free to open an issue or submit a pull request.
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=zhouhao1024/Awesome-Self-Evolving-Coding-Agents&type=Date)](https://star-history.dera.page/#zhouhao1024/Awesome-Self-Evolving-Coding-Agents&Date)
