@@ -354,7 +354,3 @@ Across these systems, memory is the most common entry point because it can impro
 ```
 
 🤝 Contributions are welcome! If you find any missing or incorrect information, please feel free to open an issue or submit a pull request.
-
-## ⭐ Star History
-
-[![Star History Chart](https://star-history.dera.page/svg?repos=zhouhao1024/Awesome-Self-Evolving-Coding-Agents&type=Date)](https://star-history.dera.page/#zhouhao1024/Awesome-Self-Evolving-Coding-Agents&Date)
