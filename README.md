@@ -20,7 +20,7 @@
 </div>
 
 <p align="center">
-  <img src="assets/evolutionary-landscape.png" alt="Evolutionary landscape of code agents and self-evolving agents" width="100%">
+  <img src="assets/Evolutionary_Landscape.png" alt="Evolutionary landscape of code agents and self-evolving agents" width="100%">
 </p>
 
 ## 📖 Introduction
