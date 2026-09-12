@@ -264,6 +264,7 @@ This repository covers six groups of resources:
 
 The following products persist memories, skills, agent configurations, or environment settings across tasks. They are mapped to the same **Target** vocabulary as the paper taxonomy; inclusion describes a documented product mechanism and does not by itself imply a fully autonomous, experimentally validated self-evolution loop.
 
+- **[Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril)** - Open-source agentic software factory with an amazing UI that handles parallel Git worktrees for you, complete with programmatic verifications and fast review loops
 - **[Prime Agent (PA)](https://www.primeintellect.ai/blog/prime-agent)** — **Year:** 2026 · **Company:** Prime Intellect · **Target:** Agent framework, memory, skill and tool · [Code](https://github.com/PrimeIntellect-ai/prime-agent)
 - **[Gemini CLI Auto Memory (GCAM)](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/auto-memory.md)** — **Year:** 2026 · **Company:** Google · **Target:** Memory, skill and tool · [Changelog](https://github.com/google-gemini/gemini-cli/blob/main/docs/changelogs/index.md)
 - **[GitHub Copilot Memory (GCM)](https://docs.github.com/en/copilot/concepts/agents/copilot-memory)** — **Year:** 2026 · **Company:** GitHub · **Target:** Memory · [Announcement](https://github.blog/changelog/2026-03-04-copilot-memory-now-on-by-default-for-pro-and-pro-users-in-public-preview/)
