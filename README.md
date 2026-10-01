@@ -225,6 +225,7 @@ This repository covers five groups of resources:
 4. [Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases (CCA)](https://arxiv.org/abs/2512.10398) `[2025-arXiv]` · [\[Code\]](https://github.com/facebookresearch/cca-swebench)
 5. [Autogenesis: A Self-Evolving Agent Protocol](https://arxiv.org/abs/2604.15034) `[2026-arXiv]` · [\[Code\]](https://github.com/DVampire/Autogenesis)
 6. [Self-Evolving Agents with Anytime-Valid Certificates (SEA)](https://arxiv.org/abs/2607.00871) `[2026-arXiv]`
+7. [AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation](https://arxiv.org/abs/2609.35530) `[2026-arXiv]` · [\[Code\]](https://github.com/KuOnoda/AutoRef)
 
 ##### 1.2.1.6 Runtime Evolution
 
