@@ -226,6 +226,7 @@ This repository covers five groups of resources:
 5. [Autogenesis: A Self-Evolving Agent Protocol](https://arxiv.org/abs/2604.15034) `[2026-arXiv]` · [\[Code\]](https://github.com/DVampire/Autogenesis)
 6. [Self-Evolving Agents with Anytime-Valid Certificates (SEA)](https://arxiv.org/abs/2607.00871) `[2026-arXiv]`
 7. [AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation](https://arxiv.org/abs/2609.35530) `[2026-arXiv]` · [\[Code\]](https://github.com/KuOnoda/AutoRef)
+8. [PluginRSI: Recursive Improvement of Agent Harnesses with Reusable Plugins](https://arxiv.org/abs/2609.32423) `[2026-arXiv]`
 
 ##### 1.2.1.6 Runtime Evolution
 
